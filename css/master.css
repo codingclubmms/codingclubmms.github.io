@@ -86,9 +86,11 @@ body {
   word-wrap: break-all;
 }
 
+.twitter{
+float: right !important;
 
+}
 
-.glyphicon-console {
-    padding: 10px;
-    font-size: 7em;
+.footer{
+  
 }
