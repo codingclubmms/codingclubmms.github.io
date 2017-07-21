@@ -38,5 +38,7 @@
   color:white;
 }
 .nav-name{
-  
+  padding-right: 15px;
+  list-style-position: inside;
+  border-right: 1px solid #C9C9C9;
 }
