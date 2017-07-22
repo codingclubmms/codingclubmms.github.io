@@ -16,6 +16,8 @@
   <meta name="msapplication-config" content="/favicons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/contacts.css">
+  <script src="/scripts/contacts.js"></script>
 </head>
 
 <body>
@@ -45,17 +47,38 @@
     </div>
     <div class="container col-md-10">
       <div class="panel-body">
-        <div class="post">
+        <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+      Who would you like to contact?
+      <span class="caret">
+      </span>
+  </button>
+  <ul class="dropdown-menu">
+    <li class="dropdown-header">Teachers</li>
+    <li class="dropdown-li"><button class="dropdown-btn" onclick="jl()">Jessica Li</button></li>
+    <li class="dropdown-li"><button class="dropdown-btn" onclick="gr()">Gayatri Rajan</button></li>
+    <li class="dropdown-li"><button class="dropdown-btn" onclick="lt()">Luke Trenaman</button></li>
+    <li class="divider"></li>
+    <li class="dropdown-header">Administrators</li>
+    <li class="dropdown-li"><button class="dropdown-btn" onclick="sh()">Stephanie Hyatt</button></li>
+    <li class="dropdown-li"><button class="dropdown-btn" onclick="js()">Judi Stewart</button></li>
+  </ul>
+</div>
           <div class="list-group">
-            <div class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-              <h3 class="mb-1">
-                  Gayatri Rajan
-              </h5>
-            </div>
+              <div class="d-flex w-100 justify-content-between list-group-item list-group-item-action flex-column align-items-start">
+                <h3 class="mb-1" id="hdr">
+                  (PICK A PERSON FROM ABOVE)
+                </h3>
+                <p class="mb-1" id="schoology">
+                  SCHOOLOGY:
+                </p>
+                <p class="mb-1" id="s_email">
+                  SCHOOL EMAIL:
+                </p>
+              </div>
+            </a>
           </div>
-          </div>
-        </div>
+
       </div>
     </div>
     <div class="twitter media-right">
