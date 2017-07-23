@@ -19,7 +19,7 @@ function lt(){
 
 }
 
-function sh(){
+function sh(){ 
   document.getElementById("hdr").innerHTML = "Stephanie Hyatt";
   document.getElementById("schoology").innerHTML = "SCHOOLOGY: " + "<a href='https://masonohioschools.schoology.com/user/35729365/info'>Click here.</a>";
   document.getElementById("s_email").innerHTML = "SCHOOL EMAIL: " + "<a href='mailto:hyatts@masonohioschools.com' target='_top'>Click here.</a>";
