@@ -1,4 +1,5 @@
 var state;
+var bodyElement = $('#emailBody');
 
 
 $(document).ready(function () {
@@ -17,11 +18,11 @@ $(document).ready(function () {
 });
 
 function convertChildren(unencoded) {
-    encodeURIComponent(unencoded).replace(/'/g,"%27").replace(/"/g,"%22")
+    encodeURIComponent(unencoded).replace(/'/g,"%27").replace(/"/g,"%22");
 }
 
 function emailPlease(thelink) {
-    var bodyTextEncode = convertChildren($('#emailBody').val());
+    var bodyTextEncode = convertChildren(bodyElement.val());
     $("#mailMe").click(function () {
         window.open(thelink + "&body=" + bodyTextEncode);
     })
