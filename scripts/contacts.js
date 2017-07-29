@@ -1,5 +1,5 @@
 var bodyElement;
-
+var state;
 
 $(document).ready(function () {
     bodyElement = $('#emailBody');
@@ -30,9 +30,9 @@ function emailPlease(thelink) {
 }
 
 
-function setState(state) {
+function setState(newState) {
     var originLink = "mailto:gayatri.rajan@masonohioschools.com?cc=luke.trenaman@masonohioschools.com;jessicag.li@masonohioschools.com"
-    switch (state) {
+    switch (newState) {
 
         case "signUp":
             {
@@ -56,6 +56,6 @@ function setState(state) {
                 break;
             }
     }
-    // state = newState;
+    state = newState;
 
 }
