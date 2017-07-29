@@ -23,9 +23,8 @@ function convertChildren(unencoded) {
 }
 
 function emailPlease(thelink) {
-    var bodyTextEncode = convertChildren(bodyElement.val());
     $("#mailMe").click(function () {
-        window.open(thelink + "&body=" + bodyTextEncode);
+        window.open(thelink + "&body=" + convertChildren(bodyElement.val()));
     })
 }
 
