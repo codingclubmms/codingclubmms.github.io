@@ -56,6 +56,6 @@ function setState(state) {
                 break;
             }
     }
-    state = newState;
+    // state = newState;
 
 }
