@@ -18,7 +18,7 @@ $(document).ready(function () {
 
 function emailPlease(thelink) {
     $("#mailMe").click(function () {
-        window.open(thelink)
+        window.open(thelink);
     })
 }
 
