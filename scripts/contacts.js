@@ -1,5 +1,4 @@
 var state;
-var bodyText = $('#emailBody').val();
 
 
 $(document).ready(function () {
@@ -22,7 +21,7 @@ function convertChildren(unencoded) {
 }
 
 function emailPlease(thelink) {
-    var bodyTextEncode = convertChildren(bodyText);
+    var bodyTextEncode = convertChildren($('#emailBody').val());
     $("#mailMe").click(function () {
         window.open(thelink + "&body=" + bodyTextEncode);
     })
