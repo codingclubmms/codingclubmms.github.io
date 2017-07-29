@@ -1,8 +1,9 @@
-var state;
-var bodyElement = $('#emailBody');
+var bodyElement;
 
 
 $(document).ready(function () {
+    bodyElement = $('#emailBody');
+
     $("#si").click(function () {
         setState("signUp");
     })
@@ -18,7 +19,7 @@ $(document).ready(function () {
 });
 
 function convertChildren(unencoded) {
-    return encodeURIComponent(unencoded).replace(/'/g,"%27").replace(/"/g,"%22");
+    return encodeURIComponent(unencoded).replace(/'/g, "%27").replace(/"/g, "%22");
 }
 
 function emailPlease(thelink) {
@@ -55,6 +56,6 @@ function setState(state) {
                 break;
             }
     }
-     state = newState;
+    state = newState;
 
 }
