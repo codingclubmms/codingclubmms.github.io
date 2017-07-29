@@ -24,7 +24,8 @@ function convertChildren(unencoded) {
 
 function emailPlease(thelink) {
     $("#mailMe").click(function () {
-        window.open(thelink + "&body=" + convertChildren(bodyElement.val()));
+        convertChildren(bodyElement.val())
+        window.open(thelink + "&body=" +  convertChildren(bodyElement.val()));
     })
 }
 
