@@ -18,7 +18,7 @@ $(document).ready(function () {
 });
 
 function convertChildren(unencoded) {
-    encodeURIComponent(unencoded).replace(/'/g,"%27").replace(/"/g,"%22");
+    return encodeURIComponent(unencoded).replace(/'/g,"%27").replace(/"/g,"%22");
 }
 
 function emailPlease(thelink) {
@@ -55,4 +55,6 @@ function setState(state) {
                 break;
             }
     }
+     state = newState;
+
 }
